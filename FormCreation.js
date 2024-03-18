@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get all selected page numbers
         const selectedPages = Array.from(document.querySelectorAll('.input-container input[type="checkbox"]:checked')).map(cb => cb.value);
 
-        // Always include first and last pages
+        // Ensure first and last pages are included
         if (!selectedPages.includes('Page1')) selectedPages.unshift('Page1');
         if (!selectedPages.includes('Page13')) selectedPages.push('Page13');
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function compilePages(pageIds) {
         const pagesContent = await Promise.all(pageIds.map(pageId => fetchPageContent(pageId)));
-        return pagesContent.join('');
+        return pagesContent.join('\n');
     }
 
     async function fetchPageContent(pageId) {
@@ -33,11 +33,16 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('https://hooks.zapier.com/hooks/catch/13990135/3epjy1z/', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'text/html',
             },
-            body: JSON.stringify({ html: compiledHTML }),
+            body: compiledHTML,
         })
-        .then(response => response.json())
+        .then(response => {
+            if (response.ok) {
+                return response.json(); // or response.text() if the response is not JSON
+            }
+            throw new Error('Network response was not ok.');
+        })
         .then(data => console.log('Success:', data))
         .catch((error) => console.error('Error:', error));
     }
