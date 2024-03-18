@@ -1,0 +1,226 @@
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------Conditional Property Type Card---------------------------------------------------------------------------------------------------------->
+<div class="card" data-step>
+    <!------------------------------------------------------------------Detached---------------------------------------------------------------------------------------------------------->
+                <div class="input-test" id="Detached" hidden>Detached Test
+    
+                    
+    
+                        <!--Picker Version DetachedHomestyle-->
+                        <button id="DetachedHomestylePickerButton" class="primaryButton">Toggle Picker</button>
+                        <div id="modalOverlay" class="modal-overlay"></div>
+    
+                        
+                        <div id="single-picker-container" class="single-picker-container" name="DetachedHomestyle">
+                            <div class="scroll-container">
+                                <div class="picker-overlay"></div>
+                                <div class="picker-item" name="DetachedHomestyle" data-value="NotSure">Not Sure</div>
+                                <div class="picker-item" name="DetachedHomestyle" data-value="1.5 Storey">1.5 Storey</div>
+                                <div class="picker-item" name="DetachedHomestyle" data-value="2 Storey/2 Level">2 Storey / 2 Level</div>
+                                <div class="picker-item" name="DetachedHomestyle" data-value="2.5 Storey">2.5 Storey</div>
+                                <div class="picker-item" name="DetachedHomestyle" data-value="3 Level">3 Level</div>
+                                <div class="picker-item" name="DetachedHomestyle" data-value="4 Level">4 Level</div>
+                                <div class="picker-item" name="DetachedHomestyle" data-value="Bungalow">Bungalow</div>
+                                <div class="picker-item" name="DetachedHomestyle" data-value="Split-Entry">Split-Entry</div>
+                                <div class="picker-item" name="DetachedHomestyle" data-value="Other">Other</div>
+                                <button id="AcceptDetachedHomestylePickerButton" class="PickerButton">Accept</button>
+                            </div>
+                            <output for="picker-output" id="pickerOutput"></output>
+                        </div>
+                
+                       <!--Dropdown Version DetachedHomestyle-->
+                    <div class="dropdown" id="DetachedHomestyle">
+                        <label class="input-title">Style of property:</label>
+                        <div class="input-box">Select Home Style<i class="bi bi-arrow-down-circle"></i></div>
+                        <div class="list">
+                            <input type="radio" name="DetachedHomestyle" value="NotSure" id="NotSure" class="list" />
+                            <label for="NotSure"><span>Not Sure</span></label>
+                        
+                            <input type="radio" name="DetachedHomestyle" value="1.5Storey" id="OneAndHalfStorey" class="list" />
+                            <label for="OneAndHalfStorey"><span>1.5 Storey</span></label>
+                        
+                            <input type="radio" name="DetachedHomestyle" value="2Storey2Level" id="TwoStoreyTwoLevel" class="list" />
+                            <label for="TwoStoreyTwoLevel"><span>2 Storey / 2 Level</span></label>
+                        
+                            <input type="radio" name="DetachedHomestyle" value="2.5Storey" id="TwoAndHalfStorey" class="list" />
+                            <label for="TwoAndHalfStorey"><span>2.5 Storey</span></label>
+                        
+                            <input type="radio" name="DetachedHomestyle" value="3Level" id="ThreeLevel" class="list" />
+                            <label for="ThreeLevel"><span>3 Level</span></label>
+                        
+                            <input type="radio" name="DetachedHomestyle" value="4Level" id="FourLevel" class="list" />
+                            <label for="FourLevel"><span>4 Level</span></label>
+                        
+                            <input type="radio" name="DetachedHomestyle" value="Bungalow" id="Bungalow" class="list" />
+                            <label for="Bungalow"><span>Bungalow</span></label>
+                        
+                            <input type="radio" name="DetachedHomestyle" value="SplitEntry" id="SplitEntry" class="list" />
+                            <label for="SplitEntry"><span>Split-Entry</span></label>
+                        
+                            <input type="radio" name="DetachedHomestyle" value="Other" id="Other" class="list" />
+                            <label for="Other"><span>Other</span></label>
+                        </div>
+                    </div>
+        
+    <!------------------------------------------------------------------NAV---------------------------------------------------------------------------------------------------------->
+                    <div class="error-message" hidden>Required Field Missing</div>
+                    <div class="nav-button-container">   
+                        <button type="button" button class="secondaryButton" data-previous>
+                            <i class="bi bi-arrow-left"></i>Previous
+                        </button>
+                        <button type="button" button class="primaryButton" data-next>
+                            Next<i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>    
+                </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                    
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                    
+    <!------------------------------------------------------------------Condo---------------------------------------------------------------------------------------------------------->                    
+                <div class="input-test" id="Condo-Apartment" hidden>Condo-Test
+    
+                    <!--Picker Version Condo-Homestyle-->
+                    <button id="DetachedHomestylePickerButton" class="primaryButton">Toggle Picker</button>
+                    <div id="modalOverlay" class="modal-overlay"></div>
+    
+                    <div class="flex-container-column">
+                        <div id="single-picker-container" class="single-picker-container" name="CondoHomestyle">
+                            <div class="scroll-container">
+                                <div class="picker-overlay"></div>
+                                <div class="picker-item" name="CondoHomestyle" data-value="CondoApartment">Condo-Apartment</div>
+                                <div class="picker-item" name="CondoHomestyle" data-value="CondoTownhouse">Condo-Townhouse</div>
+                                <div class="picker-item" name="CondoHomestyle" data-value="CondoGardenHome">Condo Garden-Home</div>
+                                <div class="picker-item" name="CondoHomestyle" data-value="OtherCondo">Other</div>
+                                <button id="AcceptCondoHomestylePickerButton" class="PickerButton">Accept</button>
+                            </div>
+                            <output for="picker-output" id="pickerOutput"></output>
+                        </div>
+    
+                        <!--Dropdown Version Condo-Homestyle-->
+                        <div class="dropdown" id="CondoHomestyle">
+                            <label class="input-title">Style of property:</label>
+                            <div class="input-box">Select Home Style<i class="bi bi-arrow-down-circle"></i></div>
+                            <div class="list">
+                                <input type="radio" name="CondoHomestyle" value="CondoApartment" id="CondoApartment" class="list" />
+                                <label for="CondoApartment"><span>Condo-Apartment</span></label>
+                            
+                                <input type="radio" name="CondoHomestyle" value="CondoTownhouse" id="CondoTownhouse" class="list" />
+                                <label for="CondoTownhouse"><span>Condo-Townhouse</span></label>
+                            
+                                <input type="radio" name="CondoHomestyle" value="CondoGardenHome" id="CondoGardenHome" class="list" />
+                                <label for="CondoGardenHome"><span>Condo Garden-Home</span></label>
+                            
+                                <input type="radio" name="CondoHomestyle" value="OtherCondo" id="OtherCondo" class="list" />
+                                <label for="OtherCondo"><span>Other</span></label>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                        <label class="input-title" id="CondoFeesInput">
+                            <span>Monthly Condo Fees Amount:</span>
+                            <input type="text" id="CondoFees" name="CondoFees" placeholder="$">
+                        </label>
+                    
+    <!------------------------------------------------------NAV----------------------------------------------------------------------------------------------------------------->                    
+    
+                    <div class="error-message" hidden>Required Field Missing</div>
+                    <div class="nav-button-container">   
+                        <button type="button" button class="secondaryButton" data-previous>
+                            <i class="bi bi-arrow-left"></i>Previous
+                        </button>
+                        <button type="button" button class="primaryButton" data-next>
+                            Next<i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>           
+                </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                    
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                    
+    <!------------------------------------------------------------------Mini-home---------------------------------------------------------------------------------------------------------->
+                <div class="input-test" id="Mini-Home-Mobile-Home" hidden>Mini Test
+                            <label class="input-title">Leased or owned land:</label>
+                            <fieldset class="radio">
+                                <label><input type="radio" value="Well" name="OwnerOrLeasedLand" /><span>Owned<i class="bi bi-check-lg"></i></span></label>
+                                <label><input type="radio" value="Municipal/City" name="OwnerOrLeasedLand"/><span>Leased<i class="bi bi-check-lg"></i></span></label>
+                                <span class="switch"></span>
+                            </fieldset>
+                
+                    <div class="divider"></div>
+    <!-----------------------------------------------------------------------------------------------Lot Rent--------------------------------------------------------------------------------------->
+    
+                            <label class="input-title">Monthly lot rent amount:</label>
+                                <input type="text" id="LotRent" name="LotRent" placeholder="$">
+               
+    <!------------------------------------------------------------------NAV---------------------------------------------------------------------------------------------------------->
+                    <div class="error-message" hidden>Required Field Missing</div>
+                    <div class="nav-button-container">   
+                        <button type="button" button class="secondaryButton" data-previous>
+                            <i class="bi bi-arrow-left"></i>Previous
+                        </button>
+                        <button type="button" button class="primaryButton" data-next>
+                            Next<i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>    
+                </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                    
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                    
+    <!------------------------------------------------------------------Semi-Detached---------------------------------------------------------------------------------------------------------->
+                <div class="input-test" id="Semi-detached" hidden>Semi-Detached Test
+    
+    
+                    <!--Picker Version Semi-DetachedHomestyle-->
+                    <button id="DetachedHomestylePickerButton" class="primaryButton">Toggle Picker</button>
+                    <div id="modalOverlay" class="modal-overlay"></div>
+    
+                    <div class="input-title">Select Home's Style</div>
+                    <div id="single-picker-container" class="single-picker-container" name="SemiDetachedHomestyle">
+                        <div class="scroll-container">
+                            <div class="picker-overlay"></div>
+                            <div class="picker-item" name="SemiDetachedHomestyle" data-value="GardenHome">Garden Home</div>
+                            <div class="picker-item" name="SemiDetachedHomestyle" data-value="Townhouse">Townhouse</div>
+                            <div class="picker-item" name="SemiDetachedHomestyle" data-value="DuplexHalf">Duplex (half)</div>
+                            <div class="picker-item" name="SemiDetachedHomestyle" data-value="Other">Other</div>
+                            <button id="AcceptSemiDetachedHomestylePickerButton" class="PickerButton">Accept</button>
+                        </div>
+                        <output for="picker-output" id="pickerOutput"></output>
+                    </div>
+            
+    
+                    
+                        <!--Dropdown Version Semi-DetachedHomestyle-->
+                    <div class="dropdown" id="SemiDetachedHomestyle">
+                        <label class="input-title">Style of property:</label>
+                        <div class="input-box">Select Home Style<i class="bi bi-arrow-down-circle"></i></div>
+                        <div class="list">
+                            <input type="radio" name="SemiDetachedHomestyle" value="GardenHome" id="GardenHome" class="list" />
+                            <label for="GardenHome"><span>Garden Home</span></label>
+                        
+                            <input type="radio" name="SemiDetachedHomestyle" value="SemiDetached" id="SemiDetached" class="list" />
+                            <label for="SemiDetached"><span>Semi-detached</span></label>
+                        
+                            <input type="radio" name="SemiDetachedHomestyle" value="Townhouse" id="Townhouse" class="list" />
+                            <label for="Townhouse"><span>Townhouse</span></label>
+                        
+                            <input type="radio" name="SemiDetachedHomestyle" value="DuplexHalf" id="DuplexHalf" class="list" />
+                            <label for="DuplexHalf"><span>Duplex (half)</span></label>
+    
+                            <input type="radio" name="SemiDetachedHomestyle" value="Other" id="OtherSemiDetached" class="list" />
+                            <label for="OtherSemiDetached"><span>Other</span></label>
+                        
+                        </div>
+                    </div>
+                            
+    <!------------------------------------------------------------------NAV---------------------------------------------------------------------------------------------------------->
+                    <div class="error-message" hidden>Required Field Missing</div>
+                    <div class="nav-button-container">   
+                        <button type="button" button class="secondaryButton" data-previous>
+                            <i class="bi bi-arrow-left"></i>Previous
+                        </button>
+                        <button type="button" button class="primaryButton" data-next>
+                            Next<i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>    
+                </div>
+            </div>
+    

@@ -1,0 +1,46 @@
+<!------------------------------------------------------------------Card 10---------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------Electric Details Page---------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="card" data-step>
+    <div class="step-title">Electrical Details</div>
+
+            <label class="input-label">Electrical Panel:</label>
+            <fieldset class="radio">
+                <label><input type="radio" value="Breakers" name="PanelType" /><span>Breakers<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Fuses" name="PanelType"/><span>Fuses<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Both" name="PanelType"/><span>Both<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Other" name="PanelType"/><span>Other<i class="bi bi-check-lg"></i></span></label>
+                <span class="switch"></span>
+            </fieldset>
+            <div class="divider"></div>
+            <div class="input-label">Type Of Wiring:</div>
+            <div class="checkbox-grid-container">
+                <fieldset class="checkbox">
+                    <label><input type="checkbox" id="Copper" name="WiringType" value="Copper"/><span>Copper</span></label>
+                    <label><input type="checkbox" id="Aluminum" name="WiringType" value="Aluminum"/><span>Aluminum</span></label>
+                </fieldset>
+                <fieldset class="checkbox">
+                    <label><input type="checkbox" id="Knob&Tube" name="WiringType" value="Knob&Tube"/><span>Knob & Tube</span></label>
+                    <label><input type="checkbox" id="Other" name="WiringType" value="Other"/><span>Other</span></label>
+                </fieldset>  
+            </div>
+            <div class="divider"></div>
+            <label class="input-label">Panel's Amperage:</label>
+            <fieldset class="radio">
+                <label><input type="radio" value="100" name="Amperage" /><span>100Amp<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="200" name="Amperage"/><span>200Amp<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="400" name="Amperage"/><span>400Amp<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Other" name="Amperage"/><span>Other<i class="bi bi-check-lg"></i></span></label>
+                <span class="switch"></span>
+            </fieldset>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="error-message" hidden>Required Field Missing</div>
+    <div class="nav-button-container">   
+        <button type="button" button class="secondaryButton" data-previous>
+            <i class="bi bi-arrow-left"></i>Previous
+        </button>
+        <button type="button" button class="primaryButton" data-next>
+            Next<i class="bi bi-arrow-right"></i>
+        </button>
+    </div>
+</div>

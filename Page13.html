@@ -1,0 +1,106 @@
+<!------------------------------------------------------------------Card 13---------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------Contact Info Page---------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------Contact Info, extra notes & Optional Realtor Questionaire-------------------------------------------------------------------------------------->
+            <div class="card" data-step>
+                <div class="step-title">Contact info</div>
+                <div class="step-sub-title">Where should we send this market report?</div>
+
+                <div class="CustomerInfo">
+                    <input type="text" name="contactName" autocomplete="on" required/>
+                    <label for="contactName" class="cust-input">
+                        <span class="input-content"><i class="bi bi-person"></i> Name<span>
+                    </label>
+                </div>
+                <div class="twoColumn-grid-container">
+                    <div class="CustomerInfo">
+                        <input type="email" name="contactEmail" autocomplete="on" required/>
+                        <label for="contactEmail" class="cust-input">
+                            <span class="input-content"><i class="bi bi-envelope-at"></i> Email Address<span>
+                        </label>
+                    </div>
+                    <div class="CustomerInfo">
+                        <input type="tel" name="contactPhone" autocomplete="on" required/>
+                        <label for="contactPhone" class="cust-input">
+                            <span class="input-content"><i class="bi bi-telephone"></i> Contact Number<span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="Realtor-Questionaire-Conditional"><!--Realtor Questionaire-->
+                <label class="input-title">Are you currently working with a Realtor?</label>
+                <fieldset class="radio">
+                    <label><input type="radio" value="No" name="WWAR"/><span>No<i class="bi bi-check-lg"></i></span></label>
+                    <label><input type="radio" value="Yes" name="WWAR"/><span>Yes<i class="bi bi-check-lg"></i></span></label>
+                    <span class="switch"></span>
+                </fieldset>
+                <label class="input-title">Purpose of home evaluation:</label>
+                <fieldset class="radio">
+                    <label><input type="radio" value="InterestedInSellingProperty" name="PurposeOfEval" /><span>Interested in selling property<i class="bi bi-check-lg"></i></span></label>
+                    <label><input type="radio" value="JustCurious" name="PurposeOfEval"/><span>Just curious<i class="bi bi-check-lg"></i></span></label>
+                    <label><input type="radio" value="ReFinance" name="PurposeOfEval"/><span>Planning to re-finance<i class="bi bi-check-lg"></i></span></label>
+                    <label><input type="radio" value="Other" name="PurposeOfEval"/><span>Other<i class="bi bi-check-lg"></i></span></label>
+                    <span class="switch"></span>
+                </fieldset>
+                <label class="input-title">What is the timeline for selling your home?</label>
+                <fieldset class="radio">    
+                    <label><input type="radio" value="30 Daysorless" name="SellingTimeline"/><span>30 Days or less<i class="bi bi-check-lg"></i></span></label>
+                    <label><input type="radio" value="30-90Days" name="SellingTimeline"/><span>30-90 Days<i class="bi bi-check-lg"></i></span></label>
+                    <label><input type="radio" value="1Yorless" name="SellingTimeline"/><span>Within the next year<i class="bi bi-check-lg"></i></span></label>
+                    <label><input type="radio" value="1Y+" name="SellingTimeline"/><span>More than a year away<i class="bi bi-check-lg"></i></span></label>
+                    <label><input type="radio" value="NotInterested" name="SellingTimeline"/><span>I'm not interested in selling, just curious<i class="bi bi-check-lg"></i></span></label>
+                    <span class="switch"></span>
+                </fieldset>
+            </div>
+
+            <label class="input-title">Is there anything else we should know?<br><br>This could be upgrades you've made, recent renovations, important property history, or anything else that may effect your homes market value.</label>
+                <div class="textarea-container">
+                    <textarea name="AdditionalUserNotes/Information"></textarea>
+                </div>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="error-message" hidden>Required Field Missing</div>
+            <div class="nav-button-container">   
+                <button type="button" button class="secondaryButton" data-previous>
+                    <i class="bi bi-arrow-left"></i>Previous
+                </button>
+                <button type="submit" button class="primaryButton" id="formSubmitButton" data-step="submit">
+                    Submit<i class="bi bi-check-circle-fill"></i>
+                </button>
+            </div>
+        </div>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------Post Submit---------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->
+    </form>
+
+        <div class="footer"> <!-- Footer SECTION -->
+            
+            <div class="social-icons">
+                <a href="https://jakeblack.ca" target="_blank" style="font-size: 1.5rem;">
+                    <i class="bi bi-globe2"></i>
+                </a>
+                <a href="https://jakeblack.ca" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://jakeblack.ca" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://jakeblack.ca" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://jakeblack.ca" target="_blank">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a href="https://jakeblack.ca" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://jakeblack.ca" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+        </div>
+
+</body>

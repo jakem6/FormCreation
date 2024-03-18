@@ -1,0 +1,63 @@
+<!------------------------------------------------------------------Card 8---------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------Garage Details Page---------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------Garage Type+Size+Features-------------------------------------------------------------------------------------->
+<div class="card" data-step>
+    <div class="step-title">Garage details</div>
+    <div class="twoColumn-grid-container">
+        <div> 
+            <label class="input-title">Type Of Garage:</label>
+            <fieldset class="radio">
+                <label><input type="radio" value="Attached" name="GarageType" /><span>Attached<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Detached" name="GarageType"/><span>Detached<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Other" name="GarageType"/><span>Other<i class="bi bi-check-lg"></i></span></label>
+                <span class="switch"></span>
+            </fieldset>
+        </div>     
+        <div> 
+            <label class="input-title">Size Of Garage:</label>
+            <fieldset class="radio">
+                <label><input type="radio" value="Single" name="GarageSize" /><span>Single<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="1.5" name="GarageSize"/><span>1.5<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Double" name="GarageSize"/><span>Double<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Triple" name="GarageSize"/><span>Triple<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Oversized" name="GarageSize"/><span>Oversized<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Other" name="GarageSize"/><span>Other<i class="bi bi-check-lg"></i></span></label>
+                <span class="switch"></span>
+            </fieldset>
+        </div>
+    </div>    
+    <div class="divider"></div> 
+    <div class="input-title">Garage features</div>
+        <div class="checkbox-grid-container">
+            <fieldset class="checkbox">
+                <label><input type="checkbox" id="Heated" name="GarageFeatures" value="Heated"/><span>Heated</span></label>
+                <label><input type="checkbox" id="ElectricOpeners" name="GarageFeatures" value="ElectricOpeners"/><span>Electric Opener(s)</span></label>
+                <label><input type="checkbox" id="AirConditioning" name="GarageFeatures" value="AirConditioning"/><span>Air Conditioning</span></label>
+                <label><input type="checkbox" id="SecuritySystem" name="GarageFeatures" value="SecuritySystem"/><span>Security System</span></label>
+                <label><input type="checkbox" id="HeavyEquitment" name="GarageFeatures" value="HeavyEquitment"/><span>Heavy Equitment</span></label>
+            </fieldset>    
+            <fieldset class="checkbox">
+                <label><input type="checkbox" id="Insulated" name="GarageFeatures" value="Insulated"/><span>Insulated</span></label>
+                <label><input type="checkbox" id="LivingSpace" name="GarageFeatures" value="LivingSpace"/><span>Living Space: Rooms, Loft, etc</span></label>
+                <label><input type="checkbox" id="Bathrooms" name="GarageFeatures" value="Bathrooms"/><span>Bathroom(s)</span></label>
+                <label><input type="checkbox" id="Plumbing" name="GarageFeatures" value="Plumbing"/><span>Plumbing</span></label>
+                <label><input type="checkbox" id="GeneratorEquipped" name="GarageFeatures" value="GeneratorEquipped"/><span>Generator Equipped</span></label>
+            </fieldset>
+        </div>
+
+    <label class="input-label">Other Garage Features:</label>
+        <div class="textarea-container">
+            <textarea name="OtherGarageFeatures"></textarea>
+        </div>
+
+    <div class="error-message" hidden>Required Field Missing</div>
+
+    <div class="nav-button-container">   
+        <button type="button" button class="secondaryButton" data-previous>
+            <i class="bi bi-arrow-left"></i>Previous
+        </button>
+        <button type="button" button class="primaryButton" data-next>
+            Next<i class="bi bi-arrow-right"></i>
+        </button>
+    </div>
+</div>

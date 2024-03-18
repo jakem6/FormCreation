@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
+  <title>InstantHomeEvalForm__LandingPg</title> 
+  <link rel="stylesheet" href="Final-Draft.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="Final-Draft.js" defer></script>
+
+</head>
+<body>
+        <div class="header"> <!-- HEADER SECTION -->
+            <a href="https://jakeblack.ca" target="_blank">
+                <span> <i class="bi bi-globe2"></i> Visit Our Site</span>
+            </a>    
+            <img src="https://assets.codepen.io/12009279/Final+Full+Logo++%284+x+1.25+in%29.png" alt="logo" class="logo" />        </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="steps">
+                <div class="step">
+                    <span class="circle active">1</span>
+                    <div class="step-text">Property<br>Type</div>
+                </div>
+                <div class="step">
+                    <span class="circle">2</span>
+                    <div class="step-text">Property<br>Address</div>
+                </div>
+                <div class="step">
+                    <span class="circle">3</span>
+                    <div class="step-text">Property<br>Details</div>
+                </div>
+                <div class="step">
+                    <span class="circle">4</span>
+                    <div class="step-text">General<br>Property<br>Details</div>
+                </div>
+                <div class="step">
+                    <span class="circle">5</span>
+                    <div class="step-text">Interior<br>Features</div>
+                </div>
+                <div class="step">
+                    <span class="circle">6</span>
+                    <div class="step-text">Exterior<br>Features</div>
+                </div>
+                <div class="step">
+                    <span class="circle">7</span>
+                    <div class="step-text">Garage<br>Details</div>
+                </div>
+                <div class="step">
+                    <span class="circle">8</span>
+                    <div class="step-text">Heating<br>Information</div>
+                </div>
+                <div class="step">
+                    <span class="circle">9</span>
+                    <div class="step-text">Electrical<br>Information</div>
+                </div>
+                <div class="step">
+                    <span class="circle">10</span>
+                    <div class="step-text">Plumbing<br>Information</div>
+                </div>
+                <div class="step">
+                    <span class="circle">11</span>
+                    <div class="step-text">Upgrades/<br>Notes</div>
+                </div>
+                <div class="step">
+                    <span class="circle">12</span>
+                    <div class="step-text">Contact<br>Information</div>
+                </div>
+            </div>    
+        </div>
+        
+
+    <form data-multi-step class="multi-step-form" id="myForm" method="POST" action="https://hooks.zapier.com/hooks/catch/13990135/3epjy1z/">
+<!-------------------------------------------------------------------Card 1--------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------Property Type Page--------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------Property Type Buttons---------------------------------------------------------------------------------->
+        <div class="card" data-step>
+            <div class="step-title">Property type</div>
+            <div class="propertytypebutton-wrapper">
+
+                <button type="button" class="propertytypebutton" button-id="Detached" data-target-id="Detached" name="Single-Family-Detached" data-next>
+                    Single Family<img src="https://assets.codepen.io/12009279/Detached-Icon_1.svg" alt="Icon" class="button-icon">
+                </button>        
+                <button type="button" class="propertytypebutton" button-id="Condo-Apartment" data-target-id="Condo-Apartment" name="Condo-Apartment" data-next>
+                    Condominium<img src="https://assets.codepen.io/12009279/Condo-Icon.svg" alt="Icon" class="button-icon">
+                </button>
+                <button type="button" class="propertytypebutton" button-id="Mini-Home-Mobile-Home" data-target-id="Mini-Home-Mobile-Home" name="Mini-Home-Mobile-Home" data-next>
+                    Mini-Home/<br> Mobile-Home<img src="https://assets.codepen.io/12009279/Mini-Icon_1.svg" alt="Icon" class="button-icon">
+                </button>
+                <button type="button" class="propertytypebutton" button-id="Semi-detached" data-target-id="Semi-detached" name="Semi-detached" data-next>
+                    Semi-Detached<img src="https://assets.codepen.io/12009279/Garden-Icon.svg" alt="Icon" class="button-icon">
+                </button>
+            </div>
+                <input type="hidden" id="propertyType" name="propertyType">
+        </div>  

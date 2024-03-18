@@ -1,0 +1,129 @@
+<!-----------------------------------------------------------------Card 5:------------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------General--------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="card" data-step>
+    <div class="step-title">General</div>
+<!----------------------------------------------------------------Foundation/Basement Details------------------------------------------------------------------------------------------------>
+
+
+        <label class="input-title">Foundation Details:</label>
+        <!--Dropdown Type-->
+        <div class="dropdown" id="FoundationType">
+            <div class="input-box">Foundation Type<i class="bi bi-arrow-down-circle"></i></div>
+            <div class="list">
+                <input type="radio" name="FoundationType" value="FullConcrete" id="FullConcrete" class="list" />
+                <label for="FullConcrete"><span>Full-Concrete</span></label>
+            
+                <input type="radio" name="FoundationType" value="Slab" id="Slab" class="list" />
+                <label for="Slab"><span>Slab</span></label>
+
+                <input type="radio" name="FoundationType" value="Crawl" id="Crawl" class="list" />
+                <label for="Crawl"><span>Crawl</span></label>
+
+                <input type="radio" name="FoundationType" value="ICF" id="ICF" class="list" />
+                <label for="ICF"><span>ICF</span></label>
+
+            
+                <input type="radio" name="FoundationType" value="Block" id="Block" class="list" />
+                <label for="Block"><span>Block</span></label>
+            
+                <input type="radio" name="FoundationType" value="Stone" id="Stone" class="list" />
+                <label for="Stone"><span>Stone</span></label>
+            
+                <input type="radio" name="FoundationType" value="Other" id="Other" class="list" />
+                <label for="Other"><span>Other</span></label>
+            </div>
+        </div>
+
+          <!--Picker Version-->
+    <div id="single-picker-container" class="single-picker-container" name="Bathrooms">
+        <div class="scroll-container">
+            <div class="picker-overlay"></div>  
+            <div class="picker-item" name="FoundationType" data-value="Unsure">Unsure</div>
+            <div class="picker-item" name="FoundationType" data-value="FullConcrete">Full-concrete</div>
+            <div class="picker-item" name="FoundationType" data-value="Slab">Slab</div>
+            <div class="picker-item" name="FoundationType" data-value="Crawl">Crawl-space</div>
+            <div class="picker-item" name="FoundationType" data-value="ICF">ICF</div>
+            <div class="picker-item" name="FoundationType" data-value="Block">Block</div>
+            <div class="picker-item" name="FoundationType" data-value="Stone">Stone</div>
+            <div class="picker-item" name="FoundationType" data-value="Other">Other</div>
+        </div>
+        <output for="picker-output" id="pickerOutput"></output>
+    </div>
+
+
+
+            <fieldset class="radio"><!--Basement Type-->
+                <label><input type="radio" value="Unfinished" name="BasementDetails"/><span>Unfinished<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="PartiallyFinished" name="BasementDetails"/><span>Partially-Finished<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="FullyFinished" name="BasementDetails"/><span>Fully-Finished<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="WalkoutBasement" name="BasementDetails"/><span>Walkout-Basement<i class="bi bi-check-lg"></i></span></label>
+                <span class="switch"></span>
+            </fieldset>
+            
+    <div class="divider"></div>
+<!------------------------------------------------------------------------Roof Details--------------------------------------------------------------------------------------------->
+
+    <label class="input-title">Roof Details:</label>
+<div class="flex-container-column"><!--Roof Age-->
+    <div class="twoColumn-grid-container">
+        <div id="picker" class="picker" name="RoofAge">
+            <div class="picker-item" name="RoofAge" data-value="New">New</div>
+            <div class="picker-item" name="RoofAge" data-value="3YorLess">3 Years or older</div>
+            <div class="picker-item" name="RoofAge" data-value="5YorLess">Less than 5 years old</div>
+            <div class="picker-item" name="RoofAge" data-value="5-10YearsOld">5-10 years old</div>
+            <div class="picker-item" name="RoofAge" data-value="10-15YearsOld">10-15 years old</div>
+            <div class="picker-item" name="RoofAge" data-value="15-20YearsOld">15-20 years old</div>
+            <div class="picker-item" name="RoofAge" data-value="20YearsPlus">20 years or older</div>
+        </div>
+    </div>
+    <div>   
+        <label class="input-label">Material:</label><!--Roof type-->
+        <fieldset class="radio">
+            <label><input type="radio" value="Yes" name="RoofType"/><span>Asphault<i class="bi bi-check-lg"></i></span></label>
+            <label><input type="radio" value="No" name="RoofType"/><span>Metal/Steel<i class="bi bi-check-lg"></i></span></label>
+            <label><input type="radio" value="NoBasement" name="RoofType"/><span>Other<i class="bi bi-check-lg"></i></span></label>
+            <span class="switch"></span>
+        </fieldset>
+    </div>
+</div>
+
+
+<!------------------------------------------------------------------------Sewer and Water Details--------------------------------------------------------------------------------------------->
+
+        <div class="divider"></div>
+
+    <div class="twoColumn-grid-container">
+        <div>  
+            <label class="input-title">Your home's water source:</label>
+            <fieldset class="radio">
+                <label><input type="radio" value="Well" name="WaterSource" /><span>Well<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Municipal/City" name="WaterSource"/><span>Municipal/City<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Other" name="WaterSource"/><span>Other<i class="bi bi-check-lg"></i></span></label>
+                <span class="switch"></span>
+            </fieldset>
+        </div>
+        <div>  
+            <label class="input-title">Waste Management:</label>
+            <fieldset class="radio">
+                <label><input type="radio" value="Septic" name="WasteManagement" /><span>Septic<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Municipal/City" name="WasteManagement"/><span>Municipal/City<i class="bi bi-check-lg"></i></span></label>
+                <label><input type="radio" value="Other" name="WasteManagement"/><span>Other<i class="bi bi-check-lg"></i></span></label>
+                <span class="switch"></span>
+            </fieldset>
+        </div>  
+    </div>
+
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="error-message" hidden>Required Field Missing</div>
+    <div class="nav-button-container">   
+        <button type="button" button class="secondaryButton" data-previous>
+            <i class="bi bi-arrow-left"></i>Previous
+        </button>
+        <button type="button" button class="primaryButton" data-next>
+            Next<i class="bi bi-arrow-right"></i>
+        </button>
+    </div>
+</div> 

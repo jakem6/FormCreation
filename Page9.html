@@ -1,0 +1,51 @@
+<!------------------------------------------------------------------Card 9---------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------Heating Details Page---------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="card" data-step>
+    <div class="step-title">Heating details</div>
+    <div class="input-title">Heating type</div>
+    <div class="checkbox-grid-container">
+        <fieldset class="checkbox">
+            <label><input type="checkbox" id="OtherHeatFuel" name="HeatFuel" value="Other"/><span>Other</span></label>
+            <label><input type="checkbox" id="Electric" name="HeatFuel" value="Electric"/><span>Electric</span></label>
+            <label><input type="checkbox" id="NaturalGas" name="HeatFuel" value="NaturalGas"/><span>Natural Gas</span></label>
+            <label><input type="checkbox" id="Wood" name="HeatFuel" value="Wood"/><span>Wood</span></label>
+        </fieldset>
+        <fieldset class="checkbox">
+            <label><input type="checkbox" id="Geothermal" name="HeatFuel" value="Geothermal"/><span>Geothermal</span></label>
+            <label><input type="checkbox" id="Propane" name="HeatFuel" value="Propane"/><span>Propane</span></label>
+            <label><input type="checkbox" id="Oil" name="HeatFuel" value="Oil"/><span>Oil</span></label>
+            <label><input type="checkbox" id="SolarElectric" name="HeatFuel" value="SolarElectric"/><span>Solar</span></label>
+        </fieldset>            
+    </div> 
+    <div class="divider"></div>
+    <div class="input-title">Method of heating</div>
+    <div class="checkbox-grid-container">
+        <fieldset class="checkbox">
+            <label><input type="checkbox" id="ForcedAir" name="HeatMethod" value="ForcedAir"/><span>Forced-Air</span></label>
+            <label><input type="checkbox" id="Baseboard" name="HeatMethod" value="Baseboard"/><span>Baseboard</span></label>
+            <label><input type="checkbox" id="HeatPump" name="HeatMethod" value="HeatPump"/><span>Heat-Pump</span></label>
+        </fieldset>
+        <fieldset class="checkbox">
+            <label><input type="checkbox" id="HotWater" name="HeatMethod" value="HotWater"/><span>Hot-Water</span></label>
+            <label><input type="checkbox" id="Radiant" name="HeatMethod" value="Radiant"/><span>Radiant</span></label>
+            <label><input type="checkbox" id="Stove" name="HeatMethod" value="Stove"/><span>Stove</span></label>
+            <label><input type="checkbox" id="OtherHeatMethod" name="HeatMethod" value="OtherHeatMethod"/><span>Other</span></label>
+        </fieldset>            
+    </div>
+    
+    <label class="input-label">Other Methods:</label>
+        <div class="textarea-container">
+            <textarea name="OtherHeatingMethods"></textarea>
+        </div>                       
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->            
+    <div class="error-message" hidden>Required Field Missing</div>
+    <div class="nav-button-container">   
+        <button type="button" button class="secondaryButton" data-previous>
+            <i class="bi bi-arrow-left"></i>Previous
+        </button>
+        <button type="button" button class="primaryButton" data-next>
+            Next<i class="bi bi-arrow-right"></i>
+        </button>
+    </div>
+</div>
