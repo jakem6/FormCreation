@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Fetch and compile selected pages
         const compiledHTML = await compilePages(selectedPages);
 
-        // Send compiled HTML to the webhook
+        // Send compiled HTML to the server-side endpoint, which forwards it to Zapier
         sendToWebhook(compiledHTML);
     });
 
@@ -24,26 +24,48 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function fetchPageContent(pageId) {
+        // Fetch the content of each selected HTML page
         const response = await fetch(`${pageId}.html`);
         if (!response.ok) throw new Error(`Failed to fetch ${pageId}`);
         return response.text();
     }
 
     function sendToWebhook(compiledHTML) {
-        fetch('https://hooks.zapier.com/hooks/catch/13990135/3epjy1z/', {
+        // Send the compiled HTML as JSON to your server-side proxy
+        fetch('/send-to-zapier', {
             method: 'POST',
             headers: {
-                'Content-Type': 'text/html',
+                'Content-Type': 'application/json', // Specify that we're sending JSON
             },
-            body: compiledHTML,
+            body: JSON.stringify({ html: compiledHTML }), // Send the compiled HTML as part of a JSON object
         })
         .then(response => {
             if (response.ok) {
-                return response.json(); // or response.text() if the response is not JSON
+                // Assuming the server responds with JSON
+                return response.json();
             }
             throw new Error('Network response was not ok.');
         })
         .then(data => console.log('Success:', data))
         .catch((error) => console.error('Error:', error));
+    }
+});
+app.post('/send-to-zapier', async (req, res) => {
+    console.log('Received payload:', req.body);
+    const { html } = req.body;
+    try {
+        const zapierResponse = await fetch('https://hooks.zapier.com/hooks/catch/13990135/3epjy1z/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/html' },
+            body: html,
+        });
+        if (!zapierResponse.ok) {
+            throw new Error(`Zapier responded with status: ${zapierResponse.status}`);
+        }
+        const data = await zapierResponse.text();
+        res.send(data);
+    } catch (error) {
+        console.error('Error forwarding request:', error);
+        res.status(500).send('Error forwarding request to Zapier');
     }
 });
